@@ -1,0 +1,35 @@
+{
+  "name": "vue-iframe-support-widget",
+  "version": "0.0.3",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-iframe-support-widget.umd.cjs",
+  "module": "./dist/vue-iframe-support-widget.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-iframe-support-widget.js",
+      "require": "./dist/vue-iframe-support-widget.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "types": "vue-tsc ",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "primevue": "^4.3.5",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.10",
+    "vue-tsc": "2.0.29"
+  }
+}
